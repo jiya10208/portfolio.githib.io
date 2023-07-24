@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* background-image: linear-gradient(rgb(1, 1, 50), rgb(0, 0, 0)); */
+    text-decoration: none;
+    color: #fffefe;
+    list-style: none;
+}
+
+
+body {
+    background-image: linear-gradient(rgb(1, 1, 50), rgb(36, 6, 57));
+    color: rgb(255, 252, 252);
+    /* height: 100vh; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    background-color: aliceblue;
+    color: black;
+
+    box-shadow: 2px 2px 10px rgb(23, 21, 37);
+}
+
+.left {
+    font-size: 1.5rem;
+    color: black;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+nav ul li {
+    margin: 0 23px;
+}
+nav ul li a{
+    color: black;
+}
+
+nav ul li:hover {
+    color: lavender;
+}
+
+.firstsectiion {
+
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+
+
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+    width: 90vw;
+
+}
+
+.leftsection {
+    /* background-color: rgb(1, 2, 11); */
+    font-size: 2rem;
+    margin: 3vh 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+    text-shadow: 0 0 2px white;
+    width: 80%;
+    text-align: center;
+}
+
+.purple {
+    color: rgb(168, 71, 233);
+    text-shadow: 0 0 2px white;
+}
+
+
+.background {
+    transform: translateZ(-20px) scale(4);
+    opacity: 0.4;
+
+}
+
+.rightsection {
+    transform: translateZ(-15px) scale(2.5);
+    opacity: 0.6;
+
+}
+
+.rightsection,
+.background {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    /* transform: scaleX(-1); */
+}
+
+aside {
+    max-width: 80vw;
+    margin: auto;
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.box {
+    margin: 6vh 0;
+    width:80vw ;
+    height: auto;
+}
+
+.vertical {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 4vh;
+}
+
+.horizontalline {
+    width: 100%;
+    height: 2px;
+    color: white;
+    background-color: wheat;
+}
+
+.verticalline {
+    height: 7vh;
+    width: 5px;
+    background-color: wheat;
+    margin: 0;
+}
+.verticalimg{
+    
+    height:100px ;
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 2vh;
+}
+.vimg{
+    object-fit: fill;
+    /* height: 10vh; */
+    height: 100%;
+    width: 100%;
+
+}
+.verticalimg div{
+    text-align: justify;
+    width: 80%;
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+.verticalimg1{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    margin-right: 1vh;
+}
